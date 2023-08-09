@@ -1,0 +1,7 @@
+{
+    "extends":"@codernex/tsconfig/types.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["./src"]
+}

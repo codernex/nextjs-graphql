@@ -1,0 +1,12 @@
+{
+  "name": "@codernex/types",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "type-check": "tsc"
+  },
+  "devDependencies": {
+    "@codernex/tsconfig": "workspace:^",
+    "typescript": "^4.9.5"
+  }
+}

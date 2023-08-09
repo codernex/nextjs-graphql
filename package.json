@@ -4,15 +4,32 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "fbjs-scripts": "^3.0.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.5"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "stack-overflow"
+  "name": "stack-overflow",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
