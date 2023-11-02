@@ -3,23 +3,26 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "./node_modules/.bin/env-cmd -f ../../.env next dev",
+    "build": "./node_modules/.bin/env-cmd -f ../../.env next build",
+    "start": "./node_modules/.bin/env-cmd -f ../../.env next start",
+    "lint": "./node_modules/.bin/env-cmd -f ../../.env next lint"
   },
   "dependencies": {
+    "@apollo/client": "3.8.0-rc.2",
+    "@apollo/experimental-nextjs-app-support": "^0.5.1",
+    "env-cmd": "^10.1.0",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ui": "workspace:*"
   },
   "devDependencies": {
+    "@codernex/tsconfig": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "workspace:*",
-    "@codernex/tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
 }

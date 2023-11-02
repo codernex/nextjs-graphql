@@ -1,3 +1,35 @@
 {
-    "extends":"@codernex/tsconfig/api.json"
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "moduleResolution": "NodeNext",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@/resolver": ["./resolver"],
+      "@/typedefs": ["./typedef"],
+      "@/utils": ["./utils"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
 }
